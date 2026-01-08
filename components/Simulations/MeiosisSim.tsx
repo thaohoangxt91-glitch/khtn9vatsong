@@ -85,7 +85,6 @@ const MeiosisSim: React.FC = () => {
           <div className="flex w-full h-full animate-in zoom-in">
              <div className="flex-1 flex flex-col items-center justify-center gap-4 border-r-2 border-white/5">
                 <div className="w-40 h-40 rounded-full border-4 border-violet-500/30 bg-violet-500/5 flex items-center justify-center gap-4">
-                   {/* FIXED: Replaced 'scale' prop with 'className' for scaling */}
                    <ChromosomeX color1="#f87171" color2="#60a5fa" className="scale-[0.8]" />
                    <ChromosomeX color1="#f87171" className="scale-[0.8]" />
                 </div>
@@ -93,7 +92,6 @@ const MeiosisSim: React.FC = () => {
              </div>
              <div className="flex-1 flex flex-col items-center justify-center gap-4">
                 <div className="w-40 h-40 rounded-full border-4 border-violet-500/30 bg-violet-500/5 flex items-center justify-center gap-4">
-                   {/* FIXED: Replaced 'scale' prop with 'className' for scaling */}
                    <ChromosomeX color1="#60a5fa" color2="#f87171" className="scale-[0.8]" />
                    <ChromosomeX color1="#60a5fa" className="scale-[0.8]" />
                 </div>
@@ -128,8 +126,8 @@ const MeiosisSim: React.FC = () => {
 
       <div className="mt-20 w-full max-w-3xl px-12 z-10">
          <div className="flex justify-between mb-4">
-            <span className="text-[10px] font-black text-violet-500 uppercase">Giai đoạn I (2n -> n kép)</span>
-            <span className="text-[10px] font-black text-emerald-500 uppercase">Giai đoạn II (n kép -> n đơn)</span>
+            <span className="text-[10px] font-black text-violet-500 uppercase">Giai đoạn I (2n &rarr; n kép)</span>
+            <span className="text-[10px] font-black text-emerald-500 uppercase">Giai đoạn II (n kép &rarr; n đơn)</span>
          </div>
          <input 
             type="range" min="0" max="7" step="1" 
